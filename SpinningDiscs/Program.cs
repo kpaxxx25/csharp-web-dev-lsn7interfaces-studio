@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SpinningDiscs
 {
@@ -6,9 +7,21 @@ namespace SpinningDiscs
     {
         static void Main(string[] args)
         {
-            // TODO: Declare and initialize a CD and a DVD object.
+            List<string> 
+            
+                movieList = new List<string>
+            {
+                "Scenes",
+                "Bloopers"
+            };
 
-            // TODO: Call each CD and DVD method to verify that they work as expected.
+            DVD shrek = new DVD("shrek", movieList, "dvd");
+            shrek.SpinDisc();
+            
         }
     }
 }
+
+// TODO: Declare and initialize a CD and a DVD object.
+
+// TODO: Call each CD and DVD method to verify that they work as expected.
